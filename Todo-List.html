@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Todo-List</title>
+  <link rel="stylesheet" href="Todo-List.css">
+  <link rel="shortcut icon" href="favicon-96x96.png" type="x-icon">
+  <link rel="shortcut icon" href="favicon.ico" type="x-icon">
+  <link rel="shortcut icon" href="favicon.svg" type="x-icon">
+  <link rel="shortcut icon" href="apple-touch-icon.png" type="x-icon">
+  <link rel="shortcut icon" href="web-app-manifest-192x192.png" type="x-icon">
+  <link rel="shortcut icon" href="web-app-manifest-512x512.png" type="x-icon">
+</head>
+<body class="change dark-mode">
+  <button onclick="toggleMode();" class="mode">
+    <img width="20px" src="moon.png" alt="" class="sun moon">
+  </button>
+  <p class="title">Todo-List</p>
+  <div class="flex">
+  <div class="input-grid">
+  <input placeholder="TODO" type="text" class="js-input-name name">
+  <input type="date" class="js-input-date date">
+  <button onclick="updateTodo() " class="js-button-add add">Add</button>
+  </div>
+  </div>
+  <div class="js-todo-list"></div>
+<script src="Todo-List.js"></script>
+</body>
+</html>
