@@ -52,8 +52,8 @@ function toggleMode() {
   element.classList.toggle('dark-mode');
   const image = document.querySelector('.sun'); 
   if(element.classList.contains('dark-mode')){
-    image.src = 'moon.png';
+    image.src = './moon.png';
   } else {
-    image.src = 'sun.png'
+    image.src = './sun.png'
   }
 }
